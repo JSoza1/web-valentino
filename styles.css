@@ -1,0 +1,355 @@
+/* Paleta de colores */
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #EAD196;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;  
+    align-items: center;
+    background: #BF3131;
+    width: 100%;
+}
+
+.header1 {
+    display: flex;
+    width: 40%;
+    justify-content:center;
+    white-space: nowrap;     /* Evita que el texto salte a otra línea */
+    overflow: hidden;       /* Oculta el texto que sobrepasa el contenedor */
+}
+
+#logo1 {
+    width: 80%;
+    height: 100%;
+}
+
+.header2 {
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#wha1 {
+    width: 30%;
+    height: 30%
+}
+
+.header3 {
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#loc1 {
+    width: 30%;
+    height: 30%
+}
+
+/* Resuelve problema de enlaces en imagenes */
+a {
+    display: flex;
+    justify-content: center;
+}
+
+.headerText {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: small;
+    justify-content: center;
+}
+
+#divPrincipal {
+    padding-top: 5%;
+    display: flex;
+    width: 50%;
+    height: 50%;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;   /* Centra verticalmente */
+    margin: auto;          /* Opcional: Centra el div en el cuerpo */
+
+}
+
+#menuLogo {
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    max-height: 100%;
+}
+
+.divColumna {
+    display: flex;
+    margin: 0%;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.divSubtitulos {
+    display: flex;
+    margin-top: 5%;
+}
+
+.imagenSubtitulos {
+   display: flex;
+   width: 70%;
+   max-width: 100%;
+   margin-left: 0%;
+   
+}
+
+.divMenu {
+    display: flex;
+    padding: 1%;
+
+}
+
+.divTextoMenu {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+h4, p {
+    margin: 0%;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 50%;
+    white-space: nowrap;
+}
+
+/* Añadir algo de espacio entre cada grupo de elementos del menú */
+.divTextoMenu h4 {
+    margin-top: 0%; /* Añadir espacio arriba de cada título */
+}
+
+.divPrecios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: flex-end; /* Centra horizontalmente - esto es lo que faltaba */
+    width: 30%;
+    position: relative; /* Importante para posicionar el pseudo-elemento */
+    justify-content:space-around; 
+}
+
+/* Creamos un pseudo-elemento que contendrá la imagen de fondo */
+.divPrecios::before {
+    content: "";
+    background-image: url("img\\pngwing.com.png");
+    background-size: 100% auto; /* Tamaño de la imagen */
+    background-position: center; /* Centrado de la imagen */
+    background-repeat: no-repeat;
+    opacity: 0.2; /* Transparencia */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+
+.divPrecios-lomito1::before {
+    background-image: url("img\\lomitoImagen1.png");
+}
+
+.divPrecios-lomito2::before {
+    background-image: url("img\\lomitoImagen2.png");
+    opacity: 0.4;
+}
+
+.divPrecios-papas::before {
+    background-image: url("img\\papasImagen.png");
+    opacity: 0.4;
+}
+
+.divPrecios-tacos::before {
+    background-image: url("img\\taco.png");
+    opacity: 0.3;
+}
+
+.divPrecios-tacos::before {
+    background-image: url("img\\taco.png");
+    opacity: 0.3;
+}
+
+.divPrecios-botanas::before {
+    background-image: url("img\\botanas2.png");
+    opacity: 0.2;
+}
+
+.divPrecios-empanadas::before {
+    background-image: url("img\\empanadas3.png");
+    opacity: 0.2;
+}
+
+.divPrecios-milanesas::before {
+    background-image: url("img\\mila2.png");
+    opacity: 0.2;
+}
+
+.divPrecios-nachos::before {
+    background-image: url("img\\nachos2.png");
+    opacity: 0.1;
+}
+
+.divPrecios-salsas::before {
+    background-image: url("img\\salsa2.png");
+    opacity: 0.6;
+}
+
+.divPrecios-extras::before {
+    background-image: url("img\\burrito3.png");
+    opacity: 0.2;
+}
+
+.divPrecios-bebidas::before {
+    background-image: url("img\\bebida2.png");
+    opacity: 0.1;
+}
+
+.precioIndividual {
+    display: flex;
+    padding-top: 14%;
+    
+
+}
+
+hr.zigzag {
+    height: 10px;
+    border: none;
+    background: linear-gradient(135deg, #111111c0 25%, transparent 25%) -10px 0,
+                linear-gradient(225deg, #111111c0  25%, transparent 25%) -10px 0,
+                linear-gradient(315deg, #111111c0  25%, transparent 25%),
+                linear-gradient(45deg, #111111c0  25%, transparent 25%);
+    background-size: 20px 20px;
+    background-color: transparent;
+    background-color: #BF3131;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #BF3131;
+}
+
+.footerB {
+display: flex;
+}
+
+.divImagenFooter {
+    width: 40%;
+}
+
+#imagenFooter {
+    width: 100%;
+}
+
+.divRedesFooter {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#imagenF1 {
+    width: 16%;
+ 
+}
+
+#imagenF2 {
+    width: 15%;
+}
+
+#imagenF3 {
+    width: 15%;
+}
+
+/* Estilos específicos para el enlace de Facebook en el footer */
+#r-link {
+    width: 15%; /* Mismo ancho que definiste para la imagen */
+}
+
+#r-link img {
+    width: 100%; /* La imagen ocupa todo el ancho del enlace */
+
+}
+
+#r2-link {
+    width: 16%; /* Mismo ancho que definiste para la imagen */
+}
+
+#r2-link img {
+    width: 100%; /* La imagen ocupa todo el ancho del enlace */
+
+}
+
+.footerC {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Para centrar contenido */
+    padding: 3%;
+}
+
+.textFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+p {
+    font-size: 14px;
+}
+
+/* Estilo para el botón */
+#btn-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Inicialmente oculto */
+    background-color: #5c0505;
+    color: #EAD196;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 19px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+  }
+  
+  #btn-up:hover {
+    background-color: #5c0505;
+  }
+
+
+
+    @media (max-width: 390px) {                                                                       
+/* Estilos para pantallas con un ancho de 390px o menos (por ejemplo Iphone 13)                       */
+    #br1 {
+        display: none;
+    }
+
+    #btn-up {
+    padding: 10px 15px;
+    }
+   }                                                                                                    
+
+
+
+  
